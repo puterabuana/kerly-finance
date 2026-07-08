@@ -1,0 +1,18 @@
+# Kerly Finance
+
+Kerly Finance is a premium market-intelligence publication covering macro, equities, crypto, forex, bonds, commodities, earnings, and market strategy.
+
+## Core Pages
+- Homepage: https://kerlyfinance.com/
+- Article Library: https://kerlyfinance.com/articles/
+
+## Editorial Focus
+- Market news that may influence financial markets
+- Source-led macro analysis
+- Risk-on and risk-off frameworks
+- ETF flows, earnings quality, yields, DXY, real yield, and central-bank policy
+
+## Featured Articles
+- US Inflation Data and the Fed: https://kerlyfinance.com/articles/data-inflasi-as-suku-bunga-the-fed.html
+- The AI Stock Rally: https://kerlyfinance.com/articles/rally-saham-ai-valuasi-earnings-risiko-koreksi.html
+- Risk-On vs Risk-Off: https://kerlyfinance.com/articles/risk-on-risk-off-checklist-mingguan.html

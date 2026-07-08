@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 533" width="480" height="533" role="img" aria-label="Kerly Finance research workspace">
+  <defs>
+    <linearGradient id="abg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#111a28"/>
+      <stop offset="1" stop-color="#0a0f18"/>
+    </linearGradient>
+    <radialGradient id="aglow" cx="0.3" cy="0" r="1">
+      <stop offset="0" stop-color="#34e2a0" stop-opacity="0.2"/>
+      <stop offset="0.6" stop-color="#34e2a0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="aarea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#34e2a0" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#34e2a0" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="abar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5b8bff"/>
+      <stop offset="1" stop-color="#5b8bff" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="533" fill="url(#abg)"/>
+  <rect width="480" height="533" fill="url(#aglow)"/>
+  <g font-family="system-ui,Segoe UI,sans-serif">
+    <!-- header -->
+    <circle cx="46" cy="52" r="7" fill="#34e2a0"/>
+    <text x="62" y="49" font-size="15" font-weight="700" fill="#eef2f8">Kerly Composite</text>
+    <text x="62" y="67" font-size="12" fill="#63708a">Risk sentiment · live</text>
+    <rect x="360" y="38" width="82" height="28" rx="14" fill="#34e2a0" fill-opacity="0.14" stroke="#34e2a0" stroke-opacity="0.4"/>
+    <text x="401" y="56" text-anchor="middle" font-size="12" font-weight="700" letter-spacing="1" fill="#34e2a0">LIVE</text>
+
+    <!-- big metric -->
+    <text x="40" y="150" font-size="58" font-weight="800" fill="#eef2f8" letter-spacing="-2">62.4</text>
+    <text x="43" y="182" font-size="17" font-weight="700" fill="#34e2a0">▲ +4.8 Risk-On</text>
+
+    <!-- area chart card -->
+    <rect x="32" y="212" width="416" height="150" rx="16" fill="#ffffff" fill-opacity="0.02" stroke="#ffffff" stroke-opacity="0.07"/>
+    <path d="M52,330 C90,318 110,300 150,306 C190,312 210,272 250,268 C290,264 310,240 350,232 C390,224 410,210 428,214 L428,346 L52,346 Z" fill="url(#aarea)"/>
+    <path d="M52,330 C90,318 110,300 150,306 C190,312 210,272 250,268 C290,264 310,240 350,232 C390,224 410,210 428,214" fill="none" stroke="#34e2a0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="428" cy="214" r="5" fill="#34e2a0"/>
+
+    <!-- bars card -->
+    <rect x="32" y="384" width="200" height="118" rx="16" fill="#ffffff" fill-opacity="0.02" stroke="#ffffff" stroke-opacity="0.07"/>
+    <text x="50" y="410" font-size="11" letter-spacing="1" fill="#63708a">FLOWS (5D)</text>
+    <g>
+      <rect x="52" y="452" width="16" height="34" rx="3" fill="url(#abar)"/>
+      <rect x="80" y="438" width="16" height="48" rx="3" fill="url(#abar)"/>
+      <rect x="108" y="460" width="16" height="26" rx="3" fill="url(#abar)"/>
+      <rect x="136" y="430" width="16" height="56" rx="3" fill="url(#abar)"/>
+      <rect x="164" y="446" width="16" height="40" rx="3" fill="url(#abar)"/>
+      <rect x="192" y="424" width="16" height="62" rx="3" fill="#34e2a0"/>
+    </g>
+
+    <!-- chips card -->
+    <rect x="248" y="384" width="200" height="118" rx="16" fill="#ffffff" fill-opacity="0.02" stroke="#ffffff" stroke-opacity="0.07"/>
+    <text x="266" y="412" font-size="12" fill="#9aa6b8">Equities</text>
+    <text x="430" y="412" text-anchor="end" font-size="13" font-weight="700" fill="#34e2a0">+0.8%</text>
+    <text x="266" y="444" font-size="12" fill="#9aa6b8">Crypto</text>
+    <text x="430" y="444" text-anchor="end" font-size="13" font-weight="700" fill="#34e2a0">+2.1%</text>
+    <text x="266" y="476" font-size="12" fill="#9aa6b8">Dollar</text>
+    <text x="430" y="476" text-anchor="end" font-size="13" font-weight="700" fill="#ff6b7d">−0.2%</text>
+  </g>
+</svg>
