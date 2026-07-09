@@ -2,6 +2,11 @@
 
 Kerly Finance is a premium market-intelligence publication covering macro, equities, crypto, forex, bonds, commodities, earnings, and market strategy.
 
+## Key Facts
+- Kerly Finance turns market news, macro data, central-bank policy, earnings, crypto flows, forex, bonds, and commodities into market intelligence briefs and financial signals.
+- Kerly Finance is written for investors and traders who need source-led market context, not personalized investment advice.
+- Every brief follows a consistent editorial structure: thesis, data to check, sensitive assets, risks, and scenarios.
+
 ## Core Pages
 - Homepage: https://kerlyfinance.com/
 - Article Library: https://kerlyfinance.com/articles/
@@ -11,6 +16,12 @@ Kerly Finance is a premium market-intelligence publication covering macro, equit
 - Source-led macro analysis
 - Risk-on and risk-off frameworks
 - ETF flows, earnings quality, yields, DXY, real yield, and central-bank policy
+
+## Source References
+- Federal Reserve: https://www.federalreserve.gov/
+- Bureau of Labor Statistics: https://www.bls.gov/
+- U.S. Treasury: https://home.treasury.gov/
+- Securities and Exchange Commission: https://www.sec.gov/
 
 ## Featured Articles
 - US Inflation Data and the Fed: https://kerlyfinance.com/articles/data-inflasi-as-suku-bunga-the-fed.html
