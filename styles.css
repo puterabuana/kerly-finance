@@ -3,8 +3,6 @@
    Dark terminal design system · rebuilt from scratch
    ===================================================================== */
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap");
-
 :root {
   /* Surfaces */
   --bg: #080b12;
@@ -1157,6 +1155,49 @@ svg[data-icon] {
 .article-list-hero .article-dek { font-size: 18px; }
 .article-list-grid { padding-bottom: 96px; }
 .article-list-grid .latest-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+/* Custom 404 */
+.not-found-section {
+  min-height: calc(100vh - 74px);
+  display: flex;
+  align-items: center;
+  padding: 88px 0;
+  position: relative;
+  overflow: hidden;
+}
+.not-found-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--glow-green), var(--glow-blue);
+  pointer-events: none;
+}
+.not-found-card {
+  position: relative;
+  max-width: 760px;
+}
+.not-found-card h1 {
+  max-width: 680px;
+  margin: 14px 0 20px;
+  font-size: clamp(42px, 6vw, 78px);
+  line-height: 1.02;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  color: var(--text);
+}
+.not-found-card p:not(.section-kicker) {
+  max-width: 610px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-2);
+}
+.not-found-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
+}
 
 /* ---------- Reveal ---------- */
 .reveal-init { opacity: 0; transform: translateY(26px); }

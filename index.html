@@ -25,16 +25,61 @@
     <meta name="twitter:image" content="https://kerlyfinance.com/assets/og-cover.svg" />
     <meta name="theme-color" content="#080b12" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Kerly Finance",
-        "url": "https://kerlyfinance.com/",
-        "logo": "https://kerlyfinance.com/assets/favicon.svg",
-        "description": "Kerly Finance is a market-intelligence publication that reads the news, data, and policy signals that move financial markets.",
-        "sameAs": []
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://kerlyfinance.com/#organization",
+            "name": "Kerly Finance",
+            "url": "https://kerlyfinance.com/",
+            "logo": "https://kerlyfinance.com/assets/favicon.svg",
+            "description": "Kerly Finance is a market-intelligence publication that reads the news, data, and policy signals that move financial markets.",
+            "sameAs": []
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://kerlyfinance.com/#website",
+            "url": "https://kerlyfinance.com/",
+            "name": "Kerly Finance",
+            "publisher": {
+              "@id": "https://kerlyfinance.com/#organization"
+            },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://kerlyfinance.com/#webpage",
+            "url": "https://kerlyfinance.com/",
+            "name": "Kerly Finance | Market Intelligence & Financial Signals",
+            "description": "Kerly Finance turns market news, macro data, and policy signals into clear weekly briefs across stocks, crypto, forex, bonds, and commodities.",
+            "isPartOf": {
+              "@id": "https://kerlyfinance.com/#website"
+            },
+            "about": {
+              "@id": "https://kerlyfinance.com/#organization"
+            },
+            "dateModified": "2026-07-09",
+            "inLanguage": "en"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://kerlyfinance.com/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://kerlyfinance.com/"
+              }
+            ]
+          }
+        ]
       }
     </script>
   </head>
@@ -88,8 +133,8 @@
             <span class="hero-badge"><span class="dot"></span>Weekly market intelligence · <b>Jul 2026 edition</b></span>
             <h1>Market news that turns <em>noise</em> into tradable context.</h1>
             <p class="hero-text">
-              Kerly Finance distills macro data, central-bank policy, earnings, crypto flows, forex,
-              bonds, and commodities into clear briefs for reading market direction.
+              Kerly Finance turns market news, macro data, central-bank policy, earnings, crypto flows,
+              forex, bonds, and commodities into market intelligence briefs and financial signals.
             </p>
             <div class="hero-actions">
               <a class="primary-btn" href="#blog">Read Market Briefs <i data-lucide="arrow-right"></i></a>
@@ -170,7 +215,7 @@
           <div class="article-grid featured-grid">
             <article class="post-card is-lead">
               <a class="post-image" href="articles/data-inflasi-as-suku-bunga-the-fed.html">
-                <img src="assets/cover-macro.svg" alt="US inflation and Federal Reserve rate analysis chart" />
+                <img src="assets/cover-macro.svg" alt="US inflation and Federal Reserve rate analysis chart" width="800" height="480" loading="lazy" decoding="async" />
               </a>
               <div class="post-body">
                 <p class="post-tag">Macro</p>
@@ -189,7 +234,7 @@
 
             <article class="post-card">
               <a class="post-image" href="articles/rally-saham-ai-valuasi-earnings-risiko-koreksi.html">
-                <img src="assets/cover-equities.svg" alt="AI stock rally valuation and earnings chart" />
+                <img src="assets/cover-equities.svg" alt="AI stock rally valuation and earnings chart" width="800" height="480" loading="lazy" decoding="async" />
               </a>
               <div class="post-body">
                 <p class="post-tag">Equities</p>
@@ -204,7 +249,7 @@
 
             <article class="post-card">
               <a class="post-image" href="articles/risk-on-risk-off-checklist-mingguan.html">
-                <img src="assets/cover-strategy.svg" alt="Risk-on risk-off weekly checklist chart" />
+                <img src="assets/cover-strategy.svg" alt="Risk-on risk-off weekly checklist chart" width="800" height="480" loading="lazy" decoding="async" />
               </a>
               <div class="post-body">
                 <p class="post-tag">Strategy</p>
@@ -270,7 +315,7 @@
           <div class="article-grid latest-grid">
             <article class="post-card">
               <a class="post-image" href="articles/dolar-as-menguat-dxy-emerging-markets.html">
-                <img src="assets/cover-forex.svg" alt="Stronger US dollar and emerging markets chart" />
+                <img src="assets/cover-forex.svg" alt="Stronger US dollar and emerging markets chart" width="800" height="480" loading="lazy" decoding="async" />
               </a>
               <div class="post-body">
                 <p class="post-tag">Forex</p>
@@ -285,7 +330,7 @@
 
             <article class="post-card">
               <a class="post-image" href="articles/yield-obligasi-naik-saham-growth-crypto.html">
-                <img src="assets/cover-bonds.svg" alt="Rising bond yields and growth stocks chart" />
+                <img src="assets/cover-bonds.svg" alt="Rising bond yields and growth stocks chart" width="800" height="480" loading="lazy" decoding="async" />
               </a>
               <div class="post-body">
                 <p class="post-tag">Bonds</p>
@@ -300,7 +345,7 @@
 
             <article class="post-card">
               <a class="post-image" href="articles/harga-emas-safe-haven-real-yield.html">
-                <img src="assets/cover-gold.svg" alt="Gold safe haven and real yield chart" />
+                <img src="assets/cover-gold.svg" alt="Gold safe haven and real yield chart" width="800" height="480" loading="lazy" decoding="async" />
               </a>
               <div class="post-body">
                 <p class="post-tag">Commodities</p>
@@ -315,7 +360,7 @@
 
             <article class="post-card">
               <a class="post-image" href="articles/bitcoin-etf-flows-arus-dana-institusi-crypto.html">
-                <img src="assets/cover-crypto.svg" alt="Bitcoin ETF flows and institutional demand chart" />
+                <img src="assets/cover-crypto.svg" alt="Bitcoin ETF flows and institutional demand chart" width="800" height="480" loading="lazy" decoding="async" />
               </a>
               <div class="post-body">
                 <p class="post-tag">Crypto</p>
@@ -330,7 +375,7 @@
 
             <article class="post-card">
               <a class="post-image" href="articles/musim-laporan-keuangan-angka-penting-saham.html">
-                <img src="assets/cover-earnings.svg" alt="Earnings season key numbers chart" />
+                <img src="assets/cover-earnings.svg" alt="Earnings season key numbers chart" width="800" height="480" loading="lazy" decoding="async" />
               </a>
               <div class="post-body">
                 <p class="post-tag">Earnings</p>
@@ -345,7 +390,7 @@
 
             <article class="post-card">
               <a class="post-image" href="articles/watchlist-trading-saat-volatilitas-tinggi.html">
-                <img src="assets/cover-watchlist.svg" alt="High volatility trading watchlist chart" />
+                <img src="assets/cover-watchlist.svg" alt="High volatility trading watchlist chart" width="800" height="480" loading="lazy" decoding="async" />
               </a>
               <div class="post-body">
                 <p class="post-tag">Strategy</p>
@@ -364,7 +409,7 @@
       <section class="section about-section" id="about" aria-labelledby="about-title">
         <div class="container about-grid">
           <div class="about-photo">
-            <img src="assets/about.svg" alt="Kerly Finance research dashboard" />
+            <img src="assets/about.svg" alt="Kerly Finance research dashboard" width="480" height="533" loading="lazy" decoding="async" />
           </div>
           <div class="about-copy">
             <p class="section-kicker">About Kerly Finance</p>
