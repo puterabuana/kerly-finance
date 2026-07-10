@@ -7,9 +7,15 @@ Kerly Finance is a premium market-intelligence publication covering macro, equit
 - Kerly Finance is written for investors and traders who need source-led market context, not personalized investment advice.
 - Every brief follows a consistent editorial structure: thesis, data to check, sensitive assets, risks, and scenarios.
 
+## Editorial Standards
+- Articles are created by Kerly Finance Research and are educational market research, not personalized investment advice.
+- Research starts with primary sources where available, including official data releases, policy documents, company filings, and market statistics.
+- Material corrections are updated on the affected page with its revised date.
+
 ## Core Pages
 - Homepage: https://kerlyfinance.com/
 - Article Library: https://kerlyfinance.com/articles/
+- Editorial Standards: https://kerlyfinance.com/editorial-standards.html
 
 ## Editorial Focus
 - Market news that may influence financial markets

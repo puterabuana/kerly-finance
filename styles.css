@@ -1019,7 +1019,7 @@ svg[data-icon] {
   color: var(--text-2);
 }
 .article-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
-.article-meta span {
+.article-meta span, .article-meta a {
   display: inline-flex;
   align-items: center;
   padding: 7px 14px;
@@ -1030,6 +1030,9 @@ svg[data-icon] {
   font-weight: 600;
   color: var(--text-2);
 }
+.article-meta a { text-decoration: none; }
+.article-meta a:hover { color: var(--accent); border-color: rgba(52, 226, 160, 0.4); }
+.article-meta time { margin-left: 4px; }
 .article-cover { width: min(100% - 44px, 1000px); margin: 44px auto 0; }
 .article-cover img {
   width: 100%;
