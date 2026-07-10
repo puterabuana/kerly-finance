@@ -20,6 +20,7 @@ This is a code and content-structure assessment, not a measurement of live AI ci
 - Added primary-source sections and JSON-LD citations to the two articles that lacked them.
 - Declared access for GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, and PerplexityBot in `robots.txt`.
 - Expanded `llms.txt` and `sitemap.xml` with editorial policy information.
+- Aligned canonical URLs, schema URLs, sitemap entries, and internal links with Cloudflare Pages' final extensionless routes.
 
 ## Remaining Constraints
 

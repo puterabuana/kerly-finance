@@ -15,7 +15,7 @@ Kerly Finance is a premium market-intelligence publication covering macro, equit
 ## Core Pages
 - Homepage: https://kerlyfinance.com/
 - Article Library: https://kerlyfinance.com/articles/
-- Editorial Standards: https://kerlyfinance.com/editorial-standards.html
+- Editorial Standards: https://kerlyfinance.com/editorial-standards
 
 ## Editorial Focus
 - Market news that may influence financial markets
@@ -30,6 +30,6 @@ Kerly Finance is a premium market-intelligence publication covering macro, equit
 - Securities and Exchange Commission: https://www.sec.gov/
 
 ## Featured Articles
-- US Inflation Data and the Fed: https://kerlyfinance.com/articles/data-inflasi-as-suku-bunga-the-fed.html
-- The AI Stock Rally: https://kerlyfinance.com/articles/rally-saham-ai-valuasi-earnings-risiko-koreksi.html
-- Risk-On vs Risk-Off: https://kerlyfinance.com/articles/risk-on-risk-off-checklist-mingguan.html
+- US Inflation Data and the Fed: https://kerlyfinance.com/articles/data-inflasi-as-suku-bunga-the-fed
+- The AI Stock Rally: https://kerlyfinance.com/articles/rally-saham-ai-valuasi-earnings-risiko-koreksi
+- Risk-On vs Risk-Off: https://kerlyfinance.com/articles/risk-on-risk-off-checklist-mingguan
