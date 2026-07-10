@@ -826,6 +826,52 @@ svg[data-icon] {
 }
 .expertise-list svg { font-size: 17px; color: var(--accent); }
 
+/* ---------- Research Framework ---------- */
+.market-context-section {
+  border-block: 1px solid var(--line);
+  background: var(--bg-2);
+}
+.market-context-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  gap: 72px;
+  align-items: start;
+}
+.market-context-intro h2 {
+  margin: 12px 0 20px;
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+.market-context-intro > p:not(.section-kicker) {
+  max-width: 440px;
+  margin: 0;
+  font-size: 16.5px;
+  line-height: 1.75;
+  color: var(--text-2);
+}
+.market-context-copy {
+  max-width: 690px;
+  font-size: 16.5px;
+  line-height: 1.78;
+  color: var(--text-2);
+}
+.market-context-copy p { margin: 0 0 20px; }
+.market-context-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 28px;
+  margin: 30px 0 0;
+  padding: 24px 0 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+.market-context-list li { display: grid; gap: 5px; }
+.market-context-list strong { font-size: 13px; color: var(--text); }
+.market-context-list span { font-size: 14px; line-height: 1.6; color: var(--text-2); }
+
 /* ---------- Subscribe ---------- */
 .subscribe-section { padding: 108px 0; }
 .subscribe-box {
@@ -1229,6 +1275,7 @@ svg[data-icon] {
   .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .stat-band .container { grid-template-columns: repeat(2, 1fr); gap: 32px 24px; }
   .about-grid { grid-template-columns: 1fr; gap: 44px; }
+  .market-context-layout { grid-template-columns: 1fr; gap: 34px; }
   .about-photo { max-width: 420px; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
   .article-layout { grid-template-columns: 1fr; gap: 36px; width: min(100% - 44px, 720px); }
@@ -1259,6 +1306,7 @@ svg[data-icon] {
   .section { padding: 76px 0; }
   .section-head { margin-bottom: 38px; }
   .section-head.split { grid-template-columns: 1fr; gap: 18px; align-items: start; }
+  .market-context-list { grid-template-columns: 1fr; gap: 16px; }
   .view-link { justify-self: start; }
   .hero-proof { gap: 20px 32px; }
   .latest-grid, .category-grid, .related-grid,

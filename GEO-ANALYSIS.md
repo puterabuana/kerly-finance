@@ -21,6 +21,7 @@ This is a code and content-structure assessment, not a measurement of live AI ci
 - Declared access for GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, and PerplexityBot in `robots.txt`.
 - Expanded `llms.txt` and `sitemap.xml` with editorial policy information.
 - Aligned canonical URLs, schema URLs, sitemap entries, and internal links with Cloudflare Pages' final extensionless routes.
+- Improved the homepage's primary-topic alignment and added a visible research-framework passage with more than 1,000 main-content words.
 
 ## Remaining Constraints
 
