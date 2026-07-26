@@ -1,61 +1,120 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 533" width="480" height="533" role="img" aria-label="Kerly Finance research workspace">
-  <defs>
-    <linearGradient id="abg" x1="0" y1="0" x2="0.4" y2="1">
-      <stop offset="0" stop-color="#111a28"/>
-      <stop offset="1" stop-color="#0a0f18"/>
-    </linearGradient>
-    <radialGradient id="aglow" cx="0.3" cy="0" r="1">
-      <stop offset="0" stop-color="#34e2a0" stop-opacity="0.2"/>
-      <stop offset="0.6" stop-color="#34e2a0" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="aarea" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#34e2a0" stop-opacity="0.34"/>
-      <stop offset="1" stop-color="#34e2a0" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="abar" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#5b8bff"/>
-      <stop offset="1" stop-color="#5b8bff" stop-opacity="0.35"/>
-    </linearGradient>
-  </defs>
-  <rect width="480" height="533" fill="url(#abg)"/>
-  <rect width="480" height="533" fill="url(#aglow)"/>
-  <g font-family="system-ui,Segoe UI,sans-serif">
-    <!-- header -->
-    <circle cx="46" cy="52" r="7" fill="#34e2a0"/>
-    <text x="62" y="49" font-size="15" font-weight="700" fill="#eef2f8">Kerly Composite</text>
-    <text x="62" y="67" font-size="12" fill="#63708a">Risk sentiment · live</text>
-    <rect x="360" y="38" width="82" height="28" rx="14" fill="#34e2a0" fill-opacity="0.14" stroke="#34e2a0" stroke-opacity="0.4"/>
-    <text x="401" y="56" text-anchor="middle" font-size="12" font-weight="700" letter-spacing="1" fill="#34e2a0">LIVE</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 533" width="480" height="533" role="img" aria-label="Kerly Finance research note with annotated market chart">
+  <!-- Morning Desk palette: paper, evergreen ink, ledger green, gilt, bull/bear -->
+  <rect width="480" height="533" fill="#fbfcfa"/>
 
-    <!-- big metric -->
-    <text x="40" y="150" font-size="58" font-weight="800" fill="#eef2f8" letter-spacing="-2">62.4</text>
-    <text x="43" y="182" font-size="17" font-weight="700" fill="#34e2a0">▲ +4.8 Risk-On</text>
+  <!-- faint ruled paper lines -->
+  <g stroke="#10231a" stroke-opacity="0.06" stroke-width="1">
+    <line x1="0" y1="88" x2="480" y2="88"/>
+    <line x1="0" y1="132" x2="480" y2="132"/>
+    <line x1="0" y1="176" x2="480" y2="176"/>
+    <line x1="0" y1="220" x2="480" y2="220"/>
+    <line x1="0" y1="264" x2="480" y2="264"/>
+    <line x1="0" y1="308" x2="480" y2="308"/>
+    <line x1="0" y1="352" x2="480" y2="352"/>
+    <line x1="0" y1="396" x2="480" y2="396"/>
+    <line x1="0" y1="440" x2="480" y2="440"/>
+    <line x1="0" y1="484" x2="480" y2="484"/>
+  </g>
 
-    <!-- area chart card -->
-    <rect x="32" y="212" width="416" height="150" rx="16" fill="#ffffff" fill-opacity="0.02" stroke="#ffffff" stroke-opacity="0.07"/>
-    <path d="M52,330 C90,318 110,300 150,306 C190,312 210,272 250,268 C290,264 310,240 350,232 C390,224 410,210 428,214 L428,346 L52,346 Z" fill="url(#aarea)"/>
-    <path d="M52,330 C90,318 110,300 150,306 C190,312 210,272 250,268 C290,264 310,240 350,232 C390,224 410,210 428,214" fill="none" stroke="#34e2a0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="428" cy="214" r="5" fill="#34e2a0"/>
+  <!-- masthead -->
+  <g font-family="Consolas, 'Courier New', monospace">
+    <text x="36" y="48" font-size="11" letter-spacing="3" fill="#51635a">KERLY FINANCE — RESEARCH NOTE</text>
+    <text x="36" y="66" font-size="10" letter-spacing="1.5" fill="#7d8b84">NO. 127 · SUNDAY BRIEF · JAKARTA DESK</text>
+  </g>
+  <rect x="36" y="76" width="408" height="2" fill="#10231a"/>
+  <rect x="36" y="81" width="408" height="1" fill="#10231a" fill-opacity="0.35"/>
 
-    <!-- bars card -->
-    <rect x="32" y="384" width="200" height="118" rx="16" fill="#ffffff" fill-opacity="0.02" stroke="#ffffff" stroke-opacity="0.07"/>
-    <text x="50" y="410" font-size="11" letter-spacing="1" fill="#63708a">FLOWS (5D)</text>
-    <g>
-      <rect x="52" y="452" width="16" height="34" rx="3" fill="url(#abar)"/>
-      <rect x="80" y="438" width="16" height="48" rx="3" fill="url(#abar)"/>
-      <rect x="108" y="460" width="16" height="26" rx="3" fill="url(#abar)"/>
-      <rect x="136" y="430" width="16" height="56" rx="3" fill="url(#abar)"/>
-      <rect x="164" y="446" width="16" height="40" rx="3" fill="url(#abar)"/>
-      <rect x="192" y="424" width="16" height="62" rx="3" fill="#34e2a0"/>
+  <!-- gilt edition stamp -->
+  <g transform="translate(376,30)">
+    <rect width="68" height="24" rx="2" fill="#c9a227"/>
+    <text x="34" y="16" text-anchor="middle" font-family="Consolas, monospace" font-size="9.5" letter-spacing="2" fill="#082a1e" font-weight="bold">BRIEF</text>
+  </g>
+
+  <!-- thesis line -->
+  <text x="36" y="116" font-family="Georgia, 'Times New Roman', serif" font-size="21" font-weight="bold" fill="#10231a">Thesis: the print beats consensus,</text>
+  <text x="36" y="142" font-family="Georgia, 'Times New Roman', serif" font-size="21" font-weight="bold" fill="#10231a">but breadth must confirm.</text>
+
+  <!-- chart panel -->
+  <g transform="translate(36,166)">
+    <rect width="408" height="180" fill="#f2f4f1" stroke="#10231a" stroke-opacity="0.4" stroke-width="1"/>
+
+    <!-- gridlines -->
+    <g stroke="#10231a" stroke-opacity="0.08" stroke-width="1">
+      <line x1="0" y1="45" x2="408" y2="45"/>
+      <line x1="0" y1="90" x2="408" y2="90"/>
+      <line x1="0" y1="135" x2="408" y2="135"/>
     </g>
 
-    <!-- chips card -->
-    <rect x="248" y="384" width="200" height="118" rx="16" fill="#ffffff" fill-opacity="0.02" stroke="#ffffff" stroke-opacity="0.07"/>
-    <text x="266" y="412" font-size="12" fill="#9aa6b8">Equities</text>
-    <text x="430" y="412" text-anchor="end" font-size="13" font-weight="700" fill="#34e2a0">+0.8%</text>
-    <text x="266" y="444" font-size="12" fill="#9aa6b8">Crypto</text>
-    <text x="430" y="444" text-anchor="end" font-size="13" font-weight="700" fill="#34e2a0">+2.1%</text>
-    <text x="266" y="476" font-size="12" fill="#9aa6b8">Dollar</text>
-    <text x="430" y="476" text-anchor="end" font-size="13" font-weight="700" fill="#ff6b7d">−0.2%</text>
+    <!-- axis figures -->
+    <g font-family="Consolas, monospace" font-size="8.5" fill="#7d8b84">
+      <text x="372" y="41">5,480</text>
+      <text x="372" y="86">5,360</text>
+      <text x="372" y="131">5,240</text>
+    </g>
+
+    <!-- invalidation level (dashed, bear) -->
+    <line x1="0" y1="128" x2="408" y2="128" stroke="#bf4034" stroke-width="1.2" stroke-dasharray="5 4"/>
+    <text x="8" y="141" font-family="Consolas, monospace" font-size="9" letter-spacing="1" fill="#bf4034">INVALIDATION 5,248</text>
+
+    <!-- price path: ink, then bull confirmation -->
+    <path d="M12,150 L44,132 L70,140 L102,112 L128,122 L162,96 L190,106 L226,78 L254,88 L290,62" fill="none" stroke="#10231a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M290,62 L322,44 L350,52 L396,26" fill="none" stroke="#0e7b4f" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- analyst circle annotation around the breakout -->
+    <ellipse cx="290" cy="62" rx="17" ry="13" fill="none" stroke="#bf4034" stroke-width="1.6" transform="rotate(-8 290 62)"/>
+
+    <!-- gilt pins -->
+    <g>
+      <circle cx="162" cy="96" r="4.5" fill="#f2f4f1" stroke="#c9a227" stroke-width="2.5"/>
+      <circle cx="290" cy="62" r="4.5" fill="#f2f4f1" stroke="#c9a227" stroke-width="2.5"/>
+      <circle cx="396" cy="26" r="4.5" fill="#0e7b4f"/>
+    </g>
+
+    <!-- pin labels -->
+    <g font-family="Consolas, monospace" font-size="9" letter-spacing="1">
+      <g transform="translate(116,60)">
+        <rect width="92" height="18" fill="#fbfcfa" stroke="#10231a" stroke-opacity="0.4"/>
+        <text x="46" y="12.5" text-anchor="middle" fill="#10231a">CPI 08:30 ET</text>
+      </g>
+      <line x1="162" y1="78" x2="162" y2="91" stroke="#10231a" stroke-opacity="0.4" stroke-width="1"/>
+      <g transform="translate(252,84)">
+        <rect width="76" height="18" fill="#fbfcfa" stroke="#10231a" stroke-opacity="0.4"/>
+        <text x="38" y="12.5" text-anchor="middle" fill="#10231a">BREAKOUT</text>
+      </g>
+      <line x1="290" y1="84" x2="290" y2="75" stroke="#10231a" stroke-opacity="0.4" stroke-width="1"/>
+    </g>
+  </g>
+
+  <!-- ledger check rows -->
+  <g transform="translate(36,372)">
+    <rect x="0" y="0" width="408" height="2" fill="#10231a"/>
+    <g font-family="Consolas, monospace" font-size="10.5" letter-spacing="0.5">
+      <!-- row 1 -->
+      <rect x="0" y="14" width="11" height="11" fill="none" stroke="#0e7b4f" stroke-width="1.6"/>
+      <path d="M2,19.5 L5,23 L10,15.5" fill="none" stroke="#0e7b4f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="22" y="24" fill="#51635a">01  EVENT</text>
+      <text x="126" y="24" fill="#10231a">CPI +0.2% M/M — BELOW CONSENSUS</text>
+      <line x1="0" y1="36" x2="408" y2="36" stroke="#10231a" stroke-opacity="0.16"/>
+      <!-- row 2 -->
+      <rect x="0" y="46" width="11" height="11" fill="none" stroke="#0e7b4f" stroke-width="1.6"/>
+      <path d="M2,51.5 L5,55 L10,47.5" fill="none" stroke="#0e7b4f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="22" y="56" fill="#51635a">02  TRANSMISSION</text>
+      <text x="176" y="56" fill="#10231a">US10Y ▼ · DXY ▼ · GROWTH ▲</text>
+      <line x1="0" y1="68" x2="408" y2="68" stroke="#10231a" stroke-opacity="0.16"/>
+      <!-- row 3 -->
+      <rect x="0" y="78" width="11" height="11" fill="none" stroke="#c9a227" stroke-width="1.6"/>
+      <text x="22" y="88" fill="#51635a">03  CONFIRMATION</text>
+      <text x="176" y="88" fill="#10231a">BREADTH PENDING…</text>
+      <line x1="0" y1="100" x2="408" y2="100" stroke="#10231a" stroke-opacity="0.16"/>
+    </g>
+  </g>
+
+  <!-- footer: rotated ledger stamp + sign-off -->
+  <g transform="translate(318,492) rotate(-4)">
+    <rect x="-2" y="-16" width="130" height="30" rx="2" fill="none" stroke="#0c3b2a" stroke-width="2"/>
+    <text x="63" y="4" text-anchor="middle" font-family="Consolas, monospace" font-size="10" letter-spacing="2" fill="#0c3b2a" font-weight="bold">SOURCE-LED</text>
+  </g>
+  <g font-family="Consolas, monospace" font-size="9.5" letter-spacing="1.5" fill="#7d8b84">
+    <text x="36" y="500">READ THE TAPE · KEEP THE CONTEXT</text>
   </g>
 </svg>

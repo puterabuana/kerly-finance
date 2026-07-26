@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -24,11 +24,11 @@
     <meta name="twitter:title" content="Kerly Finance | Premium Market Intelligence & Signals" />
     <meta name="twitter:description" content="Market intelligence briefs across macro, stocks, crypto, forex, bonds, commodities, and risk sentiment." />
     <meta name="twitter:image" content="https://kerlyfinance.com/assets/og-cover.svg" />
-    <meta name="theme-color" content="#080b12" />
+    <meta name="theme-color" content="#f2f4f1" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <script type="application/ld+json">
       {
@@ -103,6 +103,25 @@
     </script>
   </head>
   <body>
+    <section class="market-strip" aria-label="Market coverage ticker">
+      <div class="container strip-inner">
+        <span class="strip-label">The Tape</span>
+        <div class="ticker">
+          <div class="ticker-track" data-ticker>
+            <span class="ticker-item up" data-sym="SPX"><span class="ticker-sym">S&amp;P 500</span><span class="ticker-val">5,431</span><span class="ticker-chg">+0.62%</span></span>
+            <span class="ticker-item up" data-sym="NDX"><span class="ticker-sym">NASDAQ</span><span class="ticker-val">17,842</span><span class="ticker-chg">+0.91%</span></span>
+            <span class="ticker-item down" data-sym="DXY"><span class="ticker-sym">DXY</span><span class="ticker-val">104.38</span><span class="ticker-chg">-0.24%</span></span>
+            <span class="ticker-item up" data-sym="US10Y"><span class="ticker-sym">US10Y</span><span class="ticker-val">4.28%</span><span class="ticker-chg">+3bps</span></span>
+            <span class="ticker-item up" data-sym="XAU"><span class="ticker-sym">GOLD</span><span class="ticker-val">2,341</span><span class="ticker-chg">+0.45%</span></span>
+            <span class="ticker-item down" data-sym="WTI"><span class="ticker-sym">WTI</span><span class="ticker-val">78.10</span><span class="ticker-chg">-1.02%</span></span>
+            <span class="ticker-item up" data-sym="BTC"><span class="ticker-sym">BTC</span><span class="ticker-val">67,420</span><span class="ticker-chg">+2.14%</span></span>
+            <span class="ticker-item down" data-sym="ETH"><span class="ticker-sym">ETH</span><span class="ticker-val">3,512</span><span class="ticker-chg">-0.58%</span></span>
+            <span class="ticker-item up" data-sym="VIX"><span class="ticker-sym">VIX</span><span class="ticker-val">13.4</span><span class="ticker-chg">-4.1%</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <header class="site-header">
       <div class="container nav-shell">
         <a class="brand" href="/" aria-label="Kerly Finance home">
@@ -111,9 +130,9 @@
         </a>
 
         <nav class="main-nav" aria-label="Primary navigation">
-          <a href="/">Home</a>
-          <a href="#blog">Intelligence</a>
-          <a href="#categories">Categories</a>
+          <a href="/" class="is-active">Home</a>
+          <a href="#blog">The Ledger</a>
+          <a href="#categories">Desks</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -127,301 +146,238 @@
     </header>
 
     <main>
-      <section class="market-strip" aria-label="Market coverage ticker">
-        <div class="container strip-inner">
-          <span class="strip-label">Signal Board</span>
-          <div class="ticker">
-            <div class="ticker-track" data-ticker>
-              <span class="ticker-item up" data-sym="SPX"><span class="ticker-sym">S&amp;P 500</span><span class="ticker-val">5,431</span><span class="ticker-chg">+0.62%</span></span>
-              <span class="ticker-item up" data-sym="NDX"><span class="ticker-sym">NASDAQ</span><span class="ticker-val">17,842</span><span class="ticker-chg">+0.91%</span></span>
-              <span class="ticker-item down" data-sym="DXY"><span class="ticker-sym">DXY</span><span class="ticker-val">104.38</span><span class="ticker-chg">-0.24%</span></span>
-              <span class="ticker-item up" data-sym="US10Y"><span class="ticker-sym">US10Y</span><span class="ticker-val">4.28%</span><span class="ticker-chg">+3bps</span></span>
-              <span class="ticker-item up" data-sym="XAU"><span class="ticker-sym">GOLD</span><span class="ticker-val">2,341</span><span class="ticker-chg">+0.45%</span></span>
-              <span class="ticker-item down" data-sym="WTI"><span class="ticker-sym">WTI</span><span class="ticker-val">78.10</span><span class="ticker-chg">-1.02%</span></span>
-              <span class="ticker-item up" data-sym="BTC"><span class="ticker-sym">BTC</span><span class="ticker-val">67,420</span><span class="ticker-chg">+2.14%</span></span>
-              <span class="ticker-item down" data-sym="ETH"><span class="ticker-sym">ETH</span><span class="ticker-val">3,512</span><span class="ticker-chg">-0.58%</span></span>
-              <span class="ticker-item up" data-sym="VIX"><span class="ticker-sym">VIX</span><span class="ticker-val">13.4</span><span class="ticker-chg">-4.1%</span></span>
-            </div>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-inner">
+          <p class="hero-edition">
+            <span>Weekly market intelligence</span>
+            <span class="rule" aria-hidden="true"></span>
+            <b data-edition>Vol. 07 — Jul 2026 · Jakarta desk</b>
+          </p>
+          <h1 id="hero-title">The news is priced in. <em>The signal isn't.</em></h1>
+          <p class="hero-text">
+            Kerly Finance reads macro data, central-bank policy, earnings, crypto flows, forex,
+            bonds, and commodities — then writes the brief that separates the event from the
+            market's real response.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#blog">Open the Ledger <i data-lucide="arrow-right"></i></a>
+            <a class="secondary-btn" href="#subscribe">Get the Sunday Brief</a>
           </div>
+
+        </div>
+
+        <div class="hero-chart" aria-hidden="true">
+            <svg viewBox="0 0 1200 400" preserveAspectRatio="none">
+              <path
+                data-chart-fill
+                d="M0,330 L80,300 L140,318 L220,262 L300,286 L380,236 L460,258 L540,196 L620,224 L700,160 L760,184 L840,130 L920,152 L1000,96 L1080,120 L1200,58 L1200,400 L0,400 Z"
+              />
+              <path
+                data-chart-line
+                pathLength="1"
+                d="M0,330 L80,300 L140,318 L220,262 L300,286 L380,236 L460,258 L540,196 L620,224 L700,160 L760,184 L840,130 L920,152"
+              />
+              <path
+                data-chart-bull
+                pathLength="1"
+                d="M920,152 L1000,96 L1080,120 L1200,58"
+              />
+            </svg>
+
+            <div class="chart-pin" style="left: 45%; top: 49%;">
+              <a href="articles/data-inflasi-as-suku-bunga-the-fed">
+                <span class="pin-label"><small>Macro</small>CPI print → the Fed</span>
+                <span class="pin-dot"></span>
+              </a>
+            </div>
+            <div class="chart-pin pin-below" style="left: 70%; top: 32.5%;">
+              <a href="articles/yield-obligasi-naik-saham-growth-crypto">
+                <span class="pin-label"><small>Bonds</small>US10Y 4.28% → growth</span>
+                <span class="pin-dot"></span>
+              </a>
+            </div>
+            <div class="chart-pin" style="left: 83.3%; top: 24%;">
+              <a href="articles/bitcoin-etf-flows-arus-dana-institusi-crypto">
+                <span class="pin-label"><small>Crypto</small>BTC ETF inflows</span>
+                <span class="pin-dot"></span>
+              </a>
+            </div>
         </div>
       </section>
 
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <span class="hero-badge"><span class="dot"></span>Weekly market intelligence · <b>Jul 2026 edition</b></span>
-            <h1>Market intelligence that turns <em>news</em> into financial signals.</h1>
-            <p class="hero-text">
-              Kerly Finance turns market news, macro data, central-bank policy, earnings, crypto flows,
-              forex, bonds, and commodities into market intelligence briefs, financial signals, and
-              source-led market context.
-            </p>
-            <div class="hero-actions">
-              <a class="primary-btn" href="#blog">Read Market Briefs <i data-lucide="arrow-right"></i></a>
-              <a class="secondary-btn" href="#categories">Explore Categories</a>
-            </div>
-            <div class="hero-proof">
-              <span><strong>8</strong><small>Asset classes</small></span>
-              <span><strong>120+</strong><small>Briefs published</small></span>
-              <span><strong>Weekly</strong><small>Sunday cadence</small></span>
-            </div>
-          </div>
-
-          <div class="hero-visual">
-            <div class="hero-panel">
-              <div class="panel-head">
-                <div class="panel-title">
-                  <span>Risk Sentiment Index</span>
-                  <strong>Kerly Composite</strong>
-                </div>
-                <span class="panel-live"><span class="dot"></span>Live</span>
-              </div>
-              <div class="panel-figure">
-                <b>62.4</b>
-                <span class="chg"><i data-lucide="trending-up"></i> +4.8 Risk-On</span>
-              </div>
-              <p class="panel-sub">Breadth improving · yields stable · crypto flows positive</p>
-              <svg class="panel-chart" viewBox="0 0 320 128" preserveAspectRatio="none" aria-hidden="true">
-                <defs>
-                  <linearGradient id="spark" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="rgba(52,226,160,0.35)" />
-                    <stop offset="100%" stop-color="rgba(52,226,160,0)" />
-                  </linearGradient>
-                </defs>
-                <path data-spark-line d="M0,96 L24,88 L48,98 L72,74 L96,82 L120,60 L144,68 L168,44 L192,52 L216,34 L240,42 L264,24 L288,30 L320,14"
-                      fill="none" stroke="#34e2a0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path data-spark-fill d="M0,96 L24,88 L48,98 L72,74 L96,82 L120,60 L144,68 L168,44 L192,52 L216,34 L240,42 L264,24 L288,30 L320,14 L320,128 L0,128 Z"
-                      fill="url(#spark)" stroke="none" />
-              </svg>
-              <div class="panel-chips">
-                <div class="panel-chip up"><span>Equities</span><strong>+0.8%</strong></div>
-                <div class="panel-chip up" data-chip="BTC"><span>Crypto</span><strong>+2.1%</strong></div>
-                <div class="panel-chip down"><span>Dollar</span><strong>-0.2%</strong></div>
-              </div>
-            </div>
-            <div class="hero-float">
-              <span class="ic"><i data-lucide="shield"></i></span>
-              <div>
-                <span>Editorial standard</span>
-                <strong>Source-led. No hype.</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="stat-band" aria-label="Kerly Finance coverage">
+      <section class="desk-facts" aria-label="Kerly Finance coverage">
         <div class="container">
-          <div class="stat"><b>34<span>+</span></b><small>Macro &amp; rates briefs</small></div>
-          <div class="stat"><b>8</b><small>Asset classes covered</small></div>
-          <div class="stat"><b>100<span>%</span></b><small>Source-led analysis</small></div>
-          <div class="stat"><b>0</b><small>Hype, ever</small></div>
+          <span><b data-count-to="8">8</b> asset classes</span>
+          <span class="sep" aria-hidden="true">·</span>
+          <span><b data-count-to="120">120</b><b>+</b> briefs published</span>
+          <span class="sep" aria-hidden="true">·</span>
+          <span>new brief every <b>Sunday</b></span>
+          <span class="sep" aria-hidden="true">·</span>
+          <span>source-led, <b>zero hype</b></span>
         </div>
       </section>
 
-      <section class="section featured-section" aria-labelledby="featured-title">
+      <section class="section" aria-labelledby="featured-title">
         <div class="container">
           <div class="section-head split">
             <div>
-              <p class="section-kicker">Featured</p>
-              <h2 id="featured-title">Featured Intelligence</h2>
+              <p class="section-kicker">Lead brief</p>
+              <h2 id="featured-title">This week's front page</h2>
             </div>
             <p class="section-note">
-              Hand-picked analysis from the Kerly research desk: what the catalyst is, which assets
-              are sensitive, and how to read it.
+              Hand-picked from the research desk: the catalyst, the sensitive assets, and how to
+              read the first reaction.
             </p>
           </div>
 
-          <div class="article-grid featured-grid">
-            <article class="post-card is-lead">
-              <a class="post-image" href="articles/data-inflasi-as-suku-bunga-the-fed">
-                <img src="assets/cover-macro.svg" alt="US inflation and Federal Reserve rate analysis chart" width="800" height="480" loading="lazy" decoding="async" />
-              </a>
-              <div class="post-body">
-                <p class="post-tag">Macro</p>
-                <h3><a href="articles/data-inflasi-as-suku-bunga-the-fed">US inflation data and the Fed: how it moves markets</a></h3>
-                <p>
-                  A framework for reading CPI, FOMC expectations, bond yields, the dollar, gold,
-                  growth stocks, and crypto — all in one place.
-                </p>
-                <div class="post-meta">
-                  <span><i data-lucide="calendar-days"></i> Jul 5, 2026</span>
-                  <span><i data-lucide="clock"></i> 8 min</span>
-                  <a href="articles/data-inflasi-as-suku-bunga-the-fed">Read <i data-lucide="arrow-right"></i></a>
-                </div>
+          <article class="lead-brief">
+            <a class="lead-media" href="articles/data-inflasi-as-suku-bunga-the-fed" aria-label="Read: US inflation data and the Fed">
+              <img src="assets/cover-macro.jpg" alt="US inflation and Federal Reserve rate analysis chart" width="800" height="480" loading="lazy" decoding="async" />
+            </a>
+            <div class="lead-copy">
+              <span class="lead-stamp">Lead Brief · Macro</span>
+              <h3><a href="articles/data-inflasi-as-suku-bunga-the-fed">US inflation data and the Fed: how it moves markets</a></h3>
+              <p>
+                A framework for reading CPI, FOMC expectations, bond yields, the dollar, gold,
+                growth stocks, and crypto — all in one place.
+              </p>
+              <div class="lead-meta">
+                <span><i data-lucide="calendar-days"></i> Jul 5, 2026</span>
+                <span><i data-lucide="clock"></i> 8 min read</span>
               </div>
-            </article>
-
-            <article class="post-card">
-              <a class="post-image" href="articles/rally-saham-ai-valuasi-earnings-risiko-koreksi">
-                <img src="assets/cover-equities.svg" alt="AI stock rally valuation and earnings chart" width="800" height="480" loading="lazy" decoding="async" />
-              </a>
-              <div class="post-body">
-                <p class="post-tag">Equities</p>
-                <h3><a href="articles/rally-saham-ai-valuasi-earnings-risiko-koreksi">The AI stock rally: valuation, earnings, and correction risk</a></h3>
-                <p>Telling healthy profit growth from euphoria while tech leads global indices.</p>
-                <div class="post-meta">
-                  <span><i data-lucide="calendar-days"></i> Jul 3, 2026</span>
-                  <a href="articles/rally-saham-ai-valuasi-earnings-risiko-koreksi">Read <i data-lucide="arrow-right"></i></a>
-                </div>
-              </div>
-            </article>
-
-            <article class="post-card">
-              <a class="post-image" href="articles/risk-on-risk-off-checklist-mingguan">
-                <img src="assets/cover-strategy.svg" alt="Risk-on risk-off weekly checklist chart" width="800" height="480" loading="lazy" decoding="async" />
-              </a>
-              <div class="post-body">
-                <p class="post-tag">Strategy</p>
-                <h3><a href="articles/risk-on-risk-off-checklist-mingguan">Risk-on vs risk-off: a weekly checklist</a></h3>
-                <p>A practical framework for tracking DXY, US10Y, gold, oil, crypto, breadth, and rotation.</p>
-                <div class="post-meta">
-                  <span><i data-lucide="calendar-days"></i> Jun 30, 2026</span>
-                  <a href="articles/risk-on-risk-off-checklist-mingguan">Read <i data-lucide="arrow-right"></i></a>
-                </div>
-              </div>
-            </article>
-          </div>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section class="section categories-section" id="categories" aria-labelledby="categories-title">
-        <div class="container">
-          <div class="section-head center">
-            <p class="section-kicker">Browse by topic</p>
-            <h2 id="categories-title">Market Categories</h2>
-            <p>Pick a research theme to build a complete market view — from macro catalysts to asset positioning.</p>
-          </div>
-
-          <div class="category-grid">
-            <a class="category-card" href="articles/data-inflasi-as-suku-bunga-the-fed">
-              <span class="category-icon"><i data-lucide="landmark"></i></span>
-              <strong>Macro</strong>
-              <span>Inflation, interest rates, and economic data.</span>
-              <small>34 articles</small>
-            </a>
-            <a class="category-card" href="articles/rally-saham-ai-valuasi-earnings-risiko-koreksi">
-              <span class="category-icon"><i data-lucide="line-chart"></i></span>
-              <strong>Stocks</strong>
-              <span>Earnings, sectors, and global indices.</span>
-              <small>28 articles</small>
-            </a>
-            <a class="category-card" href="articles/bitcoin-etf-flows-arus-dana-institusi-crypto">
-              <span class="category-icon"><i data-lucide="bitcoin"></i></span>
-              <strong>Crypto</strong>
-              <span>Bitcoin, altcoins, ETFs, and flows.</span>
-              <small>22 articles</small>
-            </a>
-            <a class="category-card" href="articles/harga-emas-safe-haven-real-yield">
-              <span class="category-icon"><i data-lucide="bar-chart-3"></i></span>
-              <strong>Commodities</strong>
-              <span>Gold, oil, the dollar, and supply shocks.</span>
-              <small>18 articles</small>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section latest-section" id="blog" aria-labelledby="latest-title">
+      <section class="section" id="blog" aria-labelledby="latest-title">
         <div class="container">
           <div class="section-head split compact">
             <div>
-              <p class="section-kicker">Latest posts</p>
-              <h2 id="latest-title">Fresh from the research desk</h2>
+              <p class="section-kicker">The ledger</p>
+              <h2 id="latest-title">Every brief, on the record</h2>
             </div>
-            <a class="view-link" href="articles/">View all posts <i data-lucide="arrow-right"></i></a>
+            <a class="view-link" href="articles/">View all briefs <i data-lucide="arrow-right"></i></a>
           </div>
 
-          <div class="article-grid latest-grid">
-            <article class="post-card">
-              <a class="post-image" href="articles/dolar-as-menguat-dxy-emerging-markets">
-                <img src="assets/cover-forex.svg" alt="Stronger US dollar and emerging markets chart" width="800" height="480" loading="lazy" decoding="async" />
-              </a>
-              <div class="post-body">
-                <p class="post-tag">Forex</p>
-                <h3><a href="articles/dolar-as-menguat-dxy-emerging-markets">A stronger US dollar: how DXY hits emerging markets</a></h3>
-                <p>DXY, yields, capital flows, and risk assets often move in the same chain. Here's how to read it.</p>
-                <div class="post-meta">
-                  <span><i data-lucide="calendar-days"></i> Jul 5, 2026</span>
-                  <a href="articles/dolar-as-menguat-dxy-emerging-markets">Read <i data-lucide="arrow-right"></i></a>
-                </div>
-              </div>
-            </article>
+          <div class="ledger">
+            <a class="ledger-row" href="articles/dolar-as-menguat-dxy-emerging-markets">
+              <span class="ledger-date">Jul 05 ’26</span>
+              <span class="desk-chip" data-desk="forex">Forex</span>
+              <span class="ledger-title">
+                <strong>A stronger US dollar: how DXY hits emerging markets</strong>
+                <span>DXY, yields, capital flows, and risk assets often move in the same chain.</span>
+              </span>
+              <span class="ledger-thumb"><img src="assets/cover-forex.jpg" alt="" width="176" height="124" loading="lazy" decoding="async" /></span>
+            </a>
 
-            <article class="post-card">
-              <a class="post-image" href="articles/yield-obligasi-naik-saham-growth-crypto">
-                <img src="assets/cover-bonds.svg" alt="Rising bond yields and growth stocks chart" width="800" height="480" loading="lazy" decoding="async" />
-              </a>
-              <div class="post-body">
-                <p class="post-tag">Bonds</p>
-                <h3><a href="articles/yield-obligasi-naik-saham-growth-crypto">Rising bond yields: why growth stocks come under pressure</a></h3>
-                <p>Higher yields change the discount rate, valuations, sector rotation, and risk appetite.</p>
-                <div class="post-meta">
-                  <span><i data-lucide="calendar-days"></i> Jul 2, 2026</span>
-                  <a href="articles/yield-obligasi-naik-saham-growth-crypto">Read <i data-lucide="arrow-right"></i></a>
-                </div>
-              </div>
-            </article>
+            <a class="ledger-row" href="articles/rally-saham-ai-valuasi-earnings-risiko-koreksi">
+              <span class="ledger-date">Jul 03 ’26</span>
+              <span class="desk-chip" data-desk="equities">Equities</span>
+              <span class="ledger-title">
+                <strong>The AI stock rally: valuation, earnings, and correction risk</strong>
+                <span>Telling healthy profit growth from euphoria while tech leads global indices.</span>
+              </span>
+              <span class="ledger-thumb"><img src="assets/cover-equities.jpg" alt="" width="176" height="124" loading="lazy" decoding="async" /></span>
+            </a>
 
-            <article class="post-card">
-              <a class="post-image" href="articles/harga-emas-safe-haven-real-yield">
-                <img src="assets/cover-gold.svg" alt="Gold safe haven and real yield chart" width="800" height="480" loading="lazy" decoding="async" />
-              </a>
-              <div class="post-body">
-                <p class="post-tag">Commodities</p>
-                <h3><a href="articles/harga-emas-safe-haven-real-yield">Gold's rally: safe haven, real yield, and strategy</a></h3>
-                <p>Gold isn't only a fear trade. Real yields, the dollar, inflation, and liquidity all matter.</p>
-                <div class="post-meta">
-                  <span><i data-lucide="calendar-days"></i> Jun 29, 2026</span>
-                  <a href="articles/harga-emas-safe-haven-real-yield">Read <i data-lucide="arrow-right"></i></a>
-                </div>
-              </div>
-            </article>
+            <a class="ledger-row" href="articles/yield-obligasi-naik-saham-growth-crypto">
+              <span class="ledger-date">Jul 02 ’26</span>
+              <span class="desk-chip" data-desk="bonds">Bonds</span>
+              <span class="ledger-title">
+                <strong>Rising bond yields: why growth stocks come under pressure</strong>
+                <span>Higher yields change the discount rate, valuations, rotation, and risk appetite.</span>
+              </span>
+              <span class="ledger-thumb"><img src="assets/cover-bonds.jpg" alt="" width="176" height="124" loading="lazy" decoding="async" /></span>
+            </a>
 
-            <article class="post-card">
-              <a class="post-image" href="articles/bitcoin-etf-flows-arus-dana-institusi-crypto">
-                <img src="assets/cover-crypto.svg" alt="Bitcoin ETF flows and institutional demand chart" width="800" height="480" loading="lazy" decoding="async" />
-              </a>
-              <div class="post-body">
-                <p class="post-tag">Crypto</p>
-                <h3><a href="articles/bitcoin-etf-flows-arus-dana-institusi-crypto">Bitcoin ETF flows: reading institutional demand</a></h3>
-                <p>ETF flows, futures basis, funding rates, and dominance map the quality of a crypto rally.</p>
-                <div class="post-meta">
-                  <span><i data-lucide="calendar-days"></i> Jun 26, 2026</span>
-                  <a href="articles/bitcoin-etf-flows-arus-dana-institusi-crypto">Read <i data-lucide="arrow-right"></i></a>
-                </div>
-              </div>
-            </article>
+            <a class="ledger-row" href="articles/risk-on-risk-off-checklist-mingguan">
+              <span class="ledger-date">Jun 30 ’26</span>
+              <span class="desk-chip" data-desk="strategy">Strategy</span>
+              <span class="ledger-title">
+                <strong>Risk-on vs risk-off: a weekly checklist</strong>
+                <span>A practical framework for DXY, US10Y, gold, oil, crypto, breadth, and rotation.</span>
+              </span>
+              <span class="ledger-thumb"><img src="assets/cover-strategy.jpg" alt="" width="176" height="124" loading="lazy" decoding="async" /></span>
+            </a>
 
-            <article class="post-card">
-              <a class="post-image" href="articles/musim-laporan-keuangan-angka-penting-saham">
-                <img src="assets/cover-earnings.svg" alt="Earnings season key numbers chart" width="800" height="480" loading="lazy" decoding="async" />
-              </a>
-              <div class="post-body">
-                <p class="post-tag">Earnings</p>
-                <h3><a href="articles/musim-laporan-keuangan-angka-penting-saham">Earnings season: three numbers that move stocks</a></h3>
-                <p>Revenue, margins, and guidance often matter more than the headline EPS print.</p>
-                <div class="post-meta">
-                  <span><i data-lucide="calendar-days"></i> Jun 22, 2026</span>
-                  <a href="articles/musim-laporan-keuangan-angka-penting-saham">Read <i data-lucide="arrow-right"></i></a>
-                </div>
-              </div>
-            </article>
+            <a class="ledger-row" href="articles/harga-emas-safe-haven-real-yield">
+              <span class="ledger-date">Jun 29 ’26</span>
+              <span class="desk-chip" data-desk="commodities">Commodities</span>
+              <span class="ledger-title">
+                <strong>Gold's rally: safe haven, real yield, and strategy</strong>
+                <span>Gold isn't only a fear trade — real yields, the dollar, and liquidity all matter.</span>
+              </span>
+              <span class="ledger-thumb"><img src="assets/cover-gold.jpg" alt="" width="176" height="124" loading="lazy" decoding="async" /></span>
+            </a>
 
-            <article class="post-card">
-              <a class="post-image" href="articles/watchlist-trading-saat-volatilitas-tinggi">
-                <img src="assets/cover-watchlist.svg" alt="High volatility trading watchlist chart" width="800" height="480" loading="lazy" decoding="async" />
-              </a>
-              <div class="post-body">
-                <p class="post-tag">Strategy</p>
-                <h3><a href="articles/watchlist-trading-saat-volatilitas-tinggi">Building a trading watchlist for high volatility</a></h3>
-                <p>A framework for sorting setups, catalysts, technical levels, liquidity, and risk.</p>
-                <div class="post-meta">
-                  <span><i data-lucide="calendar-days"></i> Jun 18, 2026</span>
-                  <a href="articles/watchlist-trading-saat-volatilitas-tinggi">Read <i data-lucide="arrow-right"></i></a>
-                </div>
-              </div>
-            </article>
+            <a class="ledger-row" href="articles/bitcoin-etf-flows-arus-dana-institusi-crypto">
+              <span class="ledger-date">Jun 26 ’26</span>
+              <span class="desk-chip" data-desk="crypto">Crypto</span>
+              <span class="ledger-title">
+                <strong>Bitcoin ETF flows: reading institutional demand</strong>
+                <span>ETF flows, futures basis, funding rates, and dominance map a rally's quality.</span>
+              </span>
+              <span class="ledger-thumb"><img src="assets/cover-crypto.jpg" alt="" width="176" height="124" loading="lazy" decoding="async" /></span>
+            </a>
+
+            <a class="ledger-row" href="articles/musim-laporan-keuangan-angka-penting-saham">
+              <span class="ledger-date">Jun 22 ’26</span>
+              <span class="desk-chip" data-desk="earnings">Earnings</span>
+              <span class="ledger-title">
+                <strong>Earnings season: three numbers that move stocks</strong>
+                <span>Revenue, margins, and guidance often matter more than the headline EPS print.</span>
+              </span>
+              <span class="ledger-thumb"><img src="assets/cover-earnings.jpg" alt="" width="176" height="124" loading="lazy" decoding="async" /></span>
+            </a>
+
+            <a class="ledger-row" href="articles/watchlist-trading-saat-volatilitas-tinggi">
+              <span class="ledger-date">Jun 18 ’26</span>
+              <span class="desk-chip" data-desk="strategy">Strategy</span>
+              <span class="ledger-title">
+                <strong>Building a trading watchlist for high volatility</strong>
+                <span>Sorting setups, catalysts, technical levels, liquidity, and risk in one workflow.</span>
+              </span>
+              <span class="ledger-thumb"><img src="assets/cover-watchlist.jpg" alt="" width="176" height="124" loading="lazy" decoding="async" /></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="categories" aria-labelledby="categories-title">
+        <div class="container">
+          <div class="section-head split">
+            <div>
+              <p class="section-kicker">The desks</p>
+              <h2 id="categories-title">Pick a research desk</h2>
+            </div>
+            <p class="section-note">
+              Each desk builds one complete market view — from the macro catalyst to asset
+              positioning.
+            </p>
+          </div>
+
+          <div class="desk-board">
+            <a class="desk-cell" data-desk="macro" href="articles/data-inflasi-as-suku-bunga-the-fed">
+              <strong>Macro</strong>
+              <span>Inflation, interest rates, and the economic data that reprices everything else.</span>
+              <small>34 briefs</small>
+            </a>
+            <a class="desk-cell" data-desk="equities" href="articles/rally-saham-ai-valuasi-earnings-risiko-koreksi">
+              <strong>Stocks</strong>
+              <span>Earnings, sectors, breadth, and the global indices that set risk appetite.</span>
+              <small>28 briefs</small>
+            </a>
+            <a class="desk-cell" data-desk="crypto" href="articles/bitcoin-etf-flows-arus-dana-institusi-crypto">
+              <strong>Crypto</strong>
+              <span>Bitcoin, altcoins, ETF flows, and the liquidity that drives them.</span>
+              <small>22 briefs</small>
+            </a>
+            <a class="desk-cell" data-desk="commodities" href="articles/harga-emas-safe-haven-real-yield">
+              <strong>Commodities</strong>
+              <span>Gold, oil, the dollar, and the supply shocks that move real assets.</span>
+              <small>18 briefs</small>
+            </a>
           </div>
         </div>
       </section>
@@ -429,7 +385,7 @@
       <section class="section market-context-section" aria-labelledby="market-context-title">
         <div class="container market-context-layout">
           <div class="market-context-intro">
-            <p class="section-kicker">Research Framework</p>
+            <p class="section-kicker">Research framework</p>
             <h2 id="market-context-title">How Kerly Finance reads market intelligence.</h2>
             <p>
               A repeatable framework for moving from a market headline to the data, assets, risks, and
@@ -473,10 +429,10 @@
         </div>
       </section>
 
-      <section class="section about-section" id="about" aria-labelledby="about-title">
+      <section class="section" id="about" aria-labelledby="about-title">
         <div class="container about-grid">
           <div class="about-photo">
-            <img src="assets/about.svg" alt="Kerly Finance research dashboard" width="480" height="533" loading="lazy" decoding="async" />
+            <img src="assets/about.svg?v=2" alt="Kerly Finance research note with annotated market chart" width="480" height="533" loading="lazy" decoding="async" />
           </div>
           <div class="about-copy">
             <p class="section-kicker">About Kerly Finance</p>
@@ -518,7 +474,7 @@
             <p class="section-kicker">Newsletter</p>
             <h2 id="subscribe-title">Get the Kerly Sunday Brief.</h2>
             <p>
-              One premium email with the macro calendar, stock catalysts, crypto flows, commodities,
+              One email with the macro calendar, stock catalysts, crypto flows, commodities,
               and the risk-on/risk-off scenarios for the week ahead.
             </p>
             <form class="subscribe-form">
@@ -577,7 +533,7 @@
 
       <div class="container footer-bottom">
         <p>&copy; 2026 Kerly Finance. All rights reserved.</p>
-        <p>Premium signals. Clear market context.</p>
+        <p>Read the tape. Keep the context.</p>
       </div>
     </footer>
 

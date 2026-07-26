@@ -10,12 +10,12 @@
     var saved = null;
     try { saved = localStorage.getItem(THEME_KEY); } catch (e) {}
     if (saved === "light" || saved === "dark") return saved;
-    return matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+    return matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
   }
   function applyTheme(theme) {
     document.documentElement.setAttribute("data-theme", theme);
     var meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) meta.setAttribute("content", theme === "light" ? "#f5f7fa" : "#080b12");
+    if (meta) meta.setAttribute("content", theme === "light" ? "#f2f4f1" : "#0c1512");
   }
   applyTheme(currentTheme());
 
@@ -134,9 +134,56 @@
     window.addEventListener("scroll", onScroll, { passive: true });
   }
 
+  /* ---------- Auto edition line (Vol. = current month) ---------- */
+  var edition = document.querySelector("[data-edition]");
+  if (edition) {
+    var MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    var now = new Date();
+    var vol = String(now.getMonth() + 1);
+    if (vol.length < 2) vol = "0" + vol;
+    edition.textContent = "Vol. " + vol + " — " + MONTHS[now.getMonth()] + " " + now.getFullYear() + " · Jakarta desk";
+  }
+
+  /* ---------- Hero chart draw-in ---------- */
+  var hero = document.querySelector(".hero");
+  if (hero && hero.querySelector(".hero-chart")) {
+    setTimeout(function () {
+      hero.classList.add("chart-in");
+    }, 250);
+  }
+
+  /* ---------- Count-up numbers (Magic UI number-ticker pattern, vanilla) ---------- */
+  var counters = document.querySelectorAll("[data-count-to]");
+  if (counters.length && "IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    var countObserver = new IntersectionObserver(
+      function (entries, obs) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          obs.unobserve(entry.target);
+          var el = entry.target;
+          var target = parseFloat(el.getAttribute("data-count-to")) || 0;
+          var start = null;
+          var dur = 900;
+          function tick(ts) {
+            if (start === null) start = ts;
+            var p = Math.min((ts - start) / dur, 1);
+            var eased = 1 - Math.pow(1 - p, 3);
+            el.textContent = String(Math.round(target * eased));
+            if (p < 1) requestAnimationFrame(tick);
+          }
+          requestAnimationFrame(tick);
+        });
+      },
+      { threshold: 0.6 }
+    );
+    counters.forEach(function (el) {
+      countObserver.observe(el);
+    });
+  }
+
   /* ---------- Scroll reveal ---------- */
   var revealTargets = document.querySelectorAll(
-    ".hero-copy, .hero-visual, .section-head, .post-card, .category-card, .stat, .about-photo, .about-copy, .subscribe-box, .article-hero-inner, .article-cover, .article-content, .toc, .mini-card"
+    ".section-head, .lead-brief, .ledger-row, .desk-cell, .market-context-intro, .market-context-copy, .post-card, .about-photo, .about-copy, .subscribe-box, .article-hero-inner, .article-cover, .article-content, .toc, .mini-card"
   );
 
   if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {

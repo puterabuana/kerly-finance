@@ -1,19 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Kerly Finance">
   <defs>
     <linearGradient id="obg" x1="0" y1="0" x2="0.5" y2="1">
-      <stop offset="0" stop-color="#0e1420"/>
-      <stop offset="1" stop-color="#080b12"/>
+      <stop offset="0" stop-color="#141416"/>
+      <stop offset="1" stop-color="#0a0a0b"/>
     </linearGradient>
     <radialGradient id="oglow" cx="0.5" cy="-0.1" r="1">
-      <stop offset="0" stop-color="#34e2a0" stop-opacity="0.22"/>
-      <stop offset="0.55" stop-color="#34e2a0" stop-opacity="0"/>
+      <stop offset="0" stop-color="#c6f24e" stop-opacity="0.22"/>
+      <stop offset="0.55" stop-color="#c6f24e" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="oarea" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#34e2a0" stop-opacity="0.3"/>
-      <stop offset="1" stop-color="#34e2a0" stop-opacity="0"/>
+      <stop offset="0" stop-color="#c6f24e" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#c6f24e" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="omark" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#5cf0b5"/><stop offset="1" stop-color="#17b378"/>
+      <stop offset="0" stop-color="#ddf87f"/><stop offset="1" stop-color="#9ccf2a"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#obg)"/>
@@ -22,15 +22,15 @@
     <line x1="0" y1="157" x2="1200" y2="157" stroke="#fff"/><line x1="0" y1="315" x2="1200" y2="315" stroke="#fff"/><line x1="0" y1="472" x2="1200" y2="472" stroke="#fff"/>
   </g>
   <path d="M0,470 C120,450 200,410 340,420 C480,430 560,350 700,340 C840,330 940,270 1080,250 C1140,242 1180,232 1200,236 L1200,630 L0,630 Z" fill="url(#oarea)"/>
-  <path d="M0,470 C120,450 200,410 340,420 C480,430 560,350 700,340 C840,330 940,270 1080,250 C1140,242 1180,232 1200,236" fill="none" stroke="#34e2a0" stroke-width="4" stroke-linecap="round"/>
+  <path d="M0,470 C120,450 200,410 340,420 C480,430 560,350 700,340 C840,330 940,270 1080,250 C1140,242 1180,232 1200,236" fill="none" stroke="#c6f24e" stroke-width="4" stroke-linecap="round"/>
   <g font-family="system-ui,Segoe UI,sans-serif">
     <rect x="80" y="96" width="66" height="66" rx="18" fill="url(#omark)"/>
     <path d="M104 112 v34 M104 130 l17 -18 M109 128 l14 18" fill="none" stroke="#06140e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
     <text x="164" y="142" font-size="34" font-weight="700" fill="#eef2f8">Kerly Finance</text>
     <text x="80" y="270" font-size="72" font-weight="800" fill="#eef2f8" letter-spacing="-3">Market signals,</text>
-    <text x="80" y="352" font-size="72" font-weight="800" letter-spacing="-3" fill="#34e2a0">decoded weekly.</text>
+    <text x="80" y="352" font-size="72" font-weight="800" letter-spacing="-3" fill="#c6f24e">decoded weekly.</text>
     <text x="80" y="410" font-size="26" fill="#9aa6b8">Macro · Equities · Crypto · Forex · Bonds · Commodities</text>
-    <rect x="80" y="452" width="150" height="40" rx="20" fill="#34e2a0" fill-opacity="0.14" stroke="#34e2a0" stroke-opacity="0.4"/>
-    <text x="155" y="478" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="1" fill="#34e2a0">kerlyfinance.com</text>
+    <rect x="80" y="452" width="150" height="40" rx="20" fill="#c6f24e" fill-opacity="0.14" stroke="#c6f24e" stroke-opacity="0.4"/>
+    <text x="155" y="478" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="1" fill="#c6f24e">kerlyfinance.com</text>
   </g>
 </svg>
