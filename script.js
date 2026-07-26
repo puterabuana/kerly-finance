@@ -141,7 +141,7 @@
     var now = new Date();
     var vol = String(now.getMonth() + 1);
     if (vol.length < 2) vol = "0" + vol;
-    edition.textContent = "Vol. " + vol + " — " + MONTHS[now.getMonth()] + " " + now.getFullYear() + " · Jakarta desk";
+    edition.textContent = "Vol. " + vol + " — " + MONTHS[now.getMonth()] + " " + now.getFullYear();
   }
 
   /* ---------- Hero chart draw-in ---------- */

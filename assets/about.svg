@@ -19,7 +19,7 @@
   <!-- masthead -->
   <g font-family="Consolas, 'Courier New', monospace">
     <text x="36" y="48" font-size="11" letter-spacing="3" fill="#51635a">KERLY FINANCE — RESEARCH NOTE</text>
-    <text x="36" y="66" font-size="10" letter-spacing="1.5" fill="#7d8b84">NO. 127 · SUNDAY BRIEF · JAKARTA DESK</text>
+    <text x="36" y="66" font-size="10" letter-spacing="1.5" fill="#7d8b84">NO. 127 · THE SUNDAY BRIEF</text>
   </g>
   <rect x="36" y="76" width="408" height="2" fill="#10231a"/>
   <rect x="36" y="81" width="408" height="1" fill="#10231a" fill-opacity="0.35"/>
