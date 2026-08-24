@@ -30,6 +30,11 @@ Kerly Finance is a premium market-intelligence publication covering macro, equit
 - Securities and Exchange Commission: https://www.sec.gov/
 
 ## Featured Articles
+- Fed Balance Sheet and Market Liquidity: https://kerlyfinance.com/articles/fed-balance-sheet-liquidity-market-signals
+- Oil Supply Shocks and Inflation Risk: https://kerlyfinance.com/articles/oil-price-supply-shock-inflation-risk
+- Earnings Revisions and Market Breadth: https://kerlyfinance.com/articles/earnings-revisions-market-breadth
+- Stablecoin Regulation and Crypto Market Structure: https://kerlyfinance.com/articles/stablecoin-regulation-crypto-market-structure
+- The Japanese Yen Carry Trade: https://kerlyfinance.com/articles/japanese-yen-carry-trade-global-risk
 - US Inflation Data and the Fed: https://kerlyfinance.com/articles/data-inflasi-as-suku-bunga-the-fed
 - The AI Stock Rally: https://kerlyfinance.com/articles/rally-saham-ai-valuasi-earnings-risiko-koreksi
 - Risk-On vs Risk-Off: https://kerlyfinance.com/articles/risk-on-risk-off-checklist-mingguan
